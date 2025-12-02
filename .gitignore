@@ -1,0 +1,43 @@
+# Environment
+.env.local
+.env.*.local
+.env
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Database
+database/backups/*
+!database/backups/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache
+*.tmp
+
+# Node (jika ada)
+node_modules/
+package-lock.json
+
+# Composer
+vendor/
+composer.lock
+
+# Database volumes
+db_data/
+portainer_data/
