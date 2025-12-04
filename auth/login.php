@@ -73,6 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <i class="fas fa-sign-in-alt"></i> Login
             </button>
         </form>
+
+        <div style="margin-top:12px; text-align:center;">
+            <a href="login-with-auth0.php" class="btn btn-secondary btn-block">
+                <i class="fab fa-auth0"></i> Login with Auth0
+            </a>
+        </div>
         
         <div class="auth-links">
             <p>Belum punya akun? <a href="register.php">Daftar disini</a></p>
