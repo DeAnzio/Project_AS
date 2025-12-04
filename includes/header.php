@@ -13,14 +13,14 @@
     <nav class="navbar">
         <div class="nav-brand"><?php echo SITE_NAME; ?></div>
         <div class="nav-menu">
-            <a href="../dashboard/" class="nav-item"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="/dashboard/" class="nav-item"><i class="fas fa-home"></i> Dashboard</a>
             <?php if (hasRole('admin') || hasRole('manager')): ?>
-            <a href="../monitoring/" class="nav-item"><i class="fas fa-chart-bar"></i> Monitoring</a>
+            <a href="/monitoring/" class="nav-item"><i class="fas fa-chart-bar"></i> Monitoring</a>
             <?php endif; ?>
             <?php if (hasRole('admin')): ?>
-            <a href="../logs/" class="nav-item"><i class="fas fa-clipboard-list"></i> Logs</a>
+            <a href="/logs/" class="nav-item"><i class="fas fa-clipboard-list"></i> Logs</a>
             <?php endif; ?>
-            <a href="../auth/logout.php" class="nav-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="/auth/logout.php" class="nav-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
             <span class="nav-item user-info">
                 <i class="fas fa-user"></i> <?php echo $_SESSION['username']; ?> 
                 (<?php echo $_SESSION['role']; ?>)

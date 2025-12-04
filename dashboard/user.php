@@ -20,6 +20,22 @@ $db = $database->getConnection();
     </div>
     
     <div class="dashboard-grid">
+        <a href="tickets/user-submit.php" class="dashboard-card dashboard-link">
+            <div class="card-icon">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <h3>Submit Ticket</h3>
+            <p>Buat tiket baru untuk department IT</p>
+        </a>
+        
+        <a href="tickets/user-list.php" class="dashboard-card dashboard-link">
+            <div class="card-icon">
+                <i class="fas fa-list"></i>
+            </div>
+            <h3>Ticket Saya</h3>
+            <p>Lihat semua tiket Anda</p>
+        </a>
+        
         <div class="dashboard-card">
             <div class="card-icon">
                 <i class="fas fa-info-circle"></i>
@@ -44,6 +60,20 @@ $db = $database->getConnection();
             <p>Ubah password dan pengaturan lain</p>
         </div>
     </div>
+    
+    <style>
+    .dashboard-link {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .dashboard-link:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    </style>
     
     <div class="quick-info">
         <h3><i class="fas fa-bullhorn"></i> Pengumuman</h3>

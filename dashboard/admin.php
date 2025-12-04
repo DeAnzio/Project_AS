@@ -102,6 +102,10 @@ $docker_info = getDockerInfo();
         <div class="dashboard-section">
             <h3><i class="fas fa-cogs"></i> Quick Actions</h3>
             <div class="action-grid">
+                <a href="tickets/admin-list.php" class="action-card">
+                    <i class="fas fa-list"></i>
+                    <span>Tickets</span>
+                </a>
                 <a href="../monitoring/" class="action-card">
                     <i class="fas fa-chart-bar"></i>
                     <span>Monitoring</span>
@@ -113,10 +117,6 @@ $docker_info = getDockerInfo();
                 <a href="manage_users.php" class="action-card">
                     <i class="fas fa-user-cog"></i>
                     <span>Manage Users</span>
-                </a>
-                <a href="#" class="action-card">
-                    <i class="fas fa-server"></i>
-                    <span>Server Info</span>
                 </a>
             </div>
             
