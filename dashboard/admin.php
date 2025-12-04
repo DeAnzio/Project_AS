@@ -110,7 +110,7 @@ $docker_info = getDockerInfo();
                     <i class="fas fa-clipboard-list"></i>
                     <span>View Logs</span>
                 </a>
-                <a href="#" class="action-card">
+                <a href="manage_users.php" class="action-card">
                     <i class="fas fa-user-cog"></i>
                     <span>Manage Users</span>
                 </a>
