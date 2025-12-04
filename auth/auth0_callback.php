@@ -11,12 +11,17 @@ if (!isset($_GET['code'])) {
 $code = $_GET['code'];
 $token_url = "https://{$config['domain']}/oauth/token";
 
+// Build redirect_uri dynamically (must match what was sent to Auth0)
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'] ?? $_SERVER['SERVER_NAME'] ?? 'localhost';
+$redirect_uri = $scheme . '://' . $host . '/auth/auth0_callback.php';
+
 $post = [
     'grant_type' => 'authorization_code',
     'client_id' => $config['client_id'],
     'client_secret' => $config['client_secret'],
     'code' => $code,
-    'redirect_uri' => $config['redirect_uri']
+    'redirect_uri' => $redirect_uri
 ];
 
 $ch = curl_init($token_url);
